@@ -1,0 +1,119 @@
+#main-top {
+    background-image: url(https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.navbar{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: darkslategray; */
+    color: white;
+    position: relative;
+    background-size: cover;
+    
+}
+
+.logo {
+    width: 15%;
+    color: rgb(247, 224, 95);
+    display: flex;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5em;
+  
+  }
+
+.navbar-list{
+    list-style: none;
+    display: flex;
+}
+
+.navbar-list-item {
+    padding: 10px;
+}
+.navbar-list-item:hover {
+    color: black;
+    font-size: 110%;
+    /* background: none; */
+}
+
+.navbar-list-item:active {
+    background: red;
+
+}
+
+.middle {
+    height: 600px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.red-box{
+    height: 100px;
+    width: 100px;
+    background: red;
+}
+
+.hamburger{
+    height: 80%;
+    width: auto;
+    display: none;
+}
+
+.sidebar-list{
+    position: fixed;
+    top: 10vh;
+    right: 0px;
+    /* background: darkslategray; */
+    width: 200px;
+    transition: 1s;
+    height: 500px;
+    height: 0;
+    margin-top: -10px;
+    
+}
+
+.sidebar-list-item{
+    padding: 10px;
+}
+
+.open {
+    padding: 10px;
+    height: auto;
+
+}
+.welcome{
+    color: white;
+}
+
+.meet{
+    color:white;
+}
+
+.more{
+    color:white;
+    background: rgb(184, 147, 46);
+    width: 200px;
+    margin-left: 70px;
+    border-radius: 12px;
+}
+
+@media (max-width: 1000px){
+    .navbar-list{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+}
